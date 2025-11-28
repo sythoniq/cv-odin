@@ -3,6 +3,7 @@ import Personal from './components/Personal.jsx'
 import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
 import Close from './components/Close.jsx'
+import Button from './components/Button.jsx'
 
 function App() {
   function handleFormSubmit(e) {
@@ -15,8 +16,14 @@ function App() {
     tgt.parentNode.style.display = "none";
   }
 
+  function handleOpenForm() {
+    const tgt = document.querySelector(".info-form");
+    tgt.style.display = "flex";
+  }
+
   return (
     <>
+      <Button text="Open Form" onClick={handleOpenForm} />
       <form className="info-form" action="#" method="post" name="info">
         <Close onClick={handleCloseForm} />
         <div className="top-form">
