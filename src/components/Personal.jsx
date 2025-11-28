@@ -3,7 +3,7 @@ import Input from "./Input"
 function Personal() {
     return (
         <div className="personal-info">
-            <p className="personal-p">Personal</p>
+            Personal
             <label htmlFor="full-name">Full Name
                 <Input type="text" id="full-name" placeholder="Enter Full Name" />
             </label>

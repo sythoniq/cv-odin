@@ -3,7 +3,7 @@ import Input from './Input.jsx'
 function Education() {
   return (
     <div className="education-info">
-      <p className="edu-p">Education</p>
+      Education
       <label htmlFor="school-name">School Name
         <Input type="text" id="school-name" placeholder="School Name" />
       </label>
