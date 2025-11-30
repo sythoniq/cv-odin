@@ -50,22 +50,24 @@ function App() {
 
   return (
     <>
-      <div className="forms">
-        <Personal change={handleChanges}/>
-        <Education change={handleChanges}/>
-        <Experience change={handleChanges}/>
-      </div>
       <header className="heading">
         <h3>{fullName}</h3>
         <p className="email-address">{emailAdd}</p>
         <p className="phone-no">{phoneNo}</p>
       </header>
-      <div className="main-content">
-        <div className="education-content">
-          <h3>{degree}</h3>
+      <div className="container">
+        <div className="forms">
+          <Personal change={handleChanges}/>
+          <Education change={handleChanges}/>
+          <Experience change={handleChanges}/>
         </div>
-        <div className="experience-content">
-          <h3>{cName}</h3>
+        <div className="main-content">
+          <div className="education-content">
+            <h3>{degree}</h3>
+          </div>
+          <div className="experience-content">
+            <h3>{cName}</h3>
+          </div>
         </div>
       </div>
     </>
