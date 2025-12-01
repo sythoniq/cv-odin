@@ -16,3 +16,12 @@
   background-color: rgba(0, 0, 0, 0.2);
   padding: .2em;
 }
+
+.education-content {
+  display: grid;
+  grid-template: 1fr / .2fr .5fr;
+  padding: .2em;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}

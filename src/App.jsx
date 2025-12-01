@@ -64,6 +64,10 @@ function App() {
           <div className="education-container">
             <h3 className="edu-title">Education</h3>
             <div className="education-content">
+              <div className="education-dates">
+                <h4>{edStart}</h4>
+                <h4>{edEnd}</h4>
+              </div>
               <h3>{degree}</h3>
             </div>
           </div>
