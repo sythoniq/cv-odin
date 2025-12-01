@@ -61,11 +61,17 @@ function App() {
           <Experience change={handleChanges}/>
         </div>
         <div className="main-content">
-          <div className="education-content">
-            <h3>{degree}</h3>
+          <div className="education-container">
+            <h3 className="edu-title">Education</h3>
+            <div className="education-content">
+              <h3>{degree}</h3>
+            </div>
           </div>
-          <div className="experience-content">
-            <h3>{cName}</h3>
+          <div className="experience-container">
+            <h3 className="exp-title">Experience</h3>
+            <div className="experience-content">
+              <h3>{cName}</h3>
+            </div>
           </div>
         </div>
       </div>
