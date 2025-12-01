@@ -19,29 +19,28 @@ function App() {
     if (val == "") {
       return;
     }
-    switch(tgt) {
-      case "full-name":
-        setFullName(val);
-      case "phone-no":
-        setPhoneNo(val);
-      case "emailAdd":
-        setEmailAdd(val);
-      case "degree":
-        setDegree(val);
-      case "edu-start":
-        setEdStart(val);
-      case "edu-end":
-        setEdEnd(val);
-      case "comp-name":
-        setCName(val);
-      case "exp-start":
-        setCStart(val);
-      case "exp-end":
-        setCEnd(val);
-      case "exp-desc":
-        setCDesc(val);
+    if (tgt === "full-name") {
+      setFullName(val);
+    } else if (tgt === "email") {
+      setEmailAdd(val);
+    } else if (tgt === "phone-no") {
+      setPhoneNo(val);
+    } else if (tgt === "degree") {
+      setDegree(val);
+    } else if (tgt === "edu-start") {
+      setEdStart(val);
+    } else if (tgt === "edu-end") {
+      setEdEnd(val);
+    } else if (tgt === "comp-name") {
+      setCName(val);
+    } else if (tgt === "exp-start") {
+      setCStart(val);
+    } else if (tgt === "exp-end") {
+      setCEnd(val);
+    } else if (tgt === "exp-desc") {
+      setCDesc(val);
     }
-  }
+  } 
 
   function handleChanges(e) {
     const target = e.id;
@@ -52,8 +51,8 @@ function App() {
     <>
       <header className="heading">
         <h3>{fullName}</h3>
-        <p className="email-address">{emailAdd}</p>
-        <p className="phone-no">{phoneNo}</p>
+        <p className="email-name">{emailAdd}</p>
+        <p className="phone-number">{phoneNo}</p>
       </header>
       <div className="container">
         <div className="forms">
