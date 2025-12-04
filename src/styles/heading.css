@@ -1,0 +1,30 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+  font-family: monospace;
+}
+
+.heading > h3 {
+  font-size: 2em;
+}
+
+.extra-info {
+  display: grid;
+  grid-template: 1fr / .25fr .25fr;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.5em;
+}
+
+.extra-info > * {
+  display: flex;
+  gap: .2em;
+}
+
+.extra-info > * > svg {
+  min-width: 10%;
+}
